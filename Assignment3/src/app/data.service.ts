@@ -8,6 +8,8 @@ export interface ApiItem {
   type: string;
   ident: string;
   name: string;
+  stringValue: string;
+  image: string;
 }
 
 @Injectable({ providedIn: 'root' })
