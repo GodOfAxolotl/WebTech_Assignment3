@@ -11,7 +11,7 @@ import {
   combineLatest2 as combineLatest,
   combineLatestAll,
   combineLatestWith,
-  concat,
+  concat2 as concat,
   concatAll,
   concatMap,
   concatMapTo,
@@ -65,7 +65,7 @@ import {
   publishBehavior,
   publishLast,
   publishReplay,
-  race,
+  race2 as race,
   raceWith,
   reduce,
   refCount,
@@ -109,10 +109,10 @@ import {
   windowToggle,
   windowWhen,
   withLatestFrom,
-  zip,
+  zip2 as zip,
   zipAll,
   zipWith
-} from "./chunk-LH3ACF5G.js";
+} from "./chunk-SJHLCYEH.js";
 export {
   audit,
   auditTime,

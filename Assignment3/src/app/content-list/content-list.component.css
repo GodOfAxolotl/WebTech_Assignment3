@@ -1,0 +1,13 @@
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 Spalten, flexibel anpassbar */
+    gap: 20px; /* Abstand zwischen den Elementen */
+    list-style: none; /* Listenpunkte entfernen */
+    padding: 0;
+  }
+  
+  li {
+    border: 1px solid #ccc; /* Optionaler Rahmen */
+    padding: 15px;
+  }
+  

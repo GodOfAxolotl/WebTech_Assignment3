@@ -6,14 +6,29 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser'; // <-- Impor
 @Component({
   selector: 'app-content-list',
   template: `
-    <ul>
-      <li *ngFor="let item of filteredItems"> 
-      {{item.ident}}: {{item.name}} 
-      <div [innerHTML]="sanitizeHtml(item.stringValue)"></div>
-      </li>
-    </ul>
+  <ul>
+    <li *ngFor="let item of filteredItems">
+      <div>
+        <h3>{{ item.name }}</h3>
+        <div [innerHTML]="sanitizeHtml(item.stringValue)"></div>
+      </div>
+    </li>
+  </ul>
   `,
-  styles: []
+  styles: [`
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    border: 1px solid #ccc;
+    padding: 15px;
+  }
+`]
 })
 export class ContentListComponent implements OnInit {
   items: ApiItem[] = [];
@@ -24,7 +39,7 @@ export class ContentListComponent implements OnInit {
   ngOnInit() {
     this.dataService.getMashupData().subscribe(items => {
       this.items = items;
-      this.filteredItems = this.items.filter(item => item.type === "data:content");
+      this.filteredItems = this.items.filter(item => item.type === "data:content" && item.stringValue != "");
     });
   }
 
