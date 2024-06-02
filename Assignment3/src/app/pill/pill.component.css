@@ -1,4 +1,10 @@
-p{
-
-    background-color: blue;
+div{
+  
+    border-style: solid;
+    border-color: orange;
+    border-width: 3px;
+    background-color: white;
+    
+    border-radius: 10px;
+    margin: 2%;
 }

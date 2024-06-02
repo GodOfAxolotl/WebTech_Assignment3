@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    color: black;
-     background-image: url("img/back.png");
+    background-color: black;
+     
     }
 
 #box_grun{background-color: #00bfa6;}
