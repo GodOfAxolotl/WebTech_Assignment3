@@ -1,0 +1,8 @@
+<p>content-list works!</p>
+<div *ngFor="let item of items">
+    <h3>{{ item.title || 'Kein Titel' }}</h3>
+    <p>Autor: {{ item.author || 'Kein Autor' }}</p>
+    <p>Datum: {{ item.date || 'Kein Datum' }}</p>
+    <hr>
+  </div>
+  
