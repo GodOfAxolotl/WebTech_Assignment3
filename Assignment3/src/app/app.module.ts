@@ -4,11 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentListComponent } from './content-list/content-list.component';
+import { PillComponent } from './pill/pill.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContentListComponent
+    ContentListComponent,
+    PillComponent
   ],
   imports: [
     BrowserModule,
