@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    color: black;
+     background-image: url("img/back.png");
+    }
+
+#box_grun{background-color: #00bfa6;}
+#box_grun_2{background-color: #00bfa6b1;}
+#box_grun_3{background-color: #00bfa677;}
+
+#box_lila{background-color: #6c63ff;}
+#box_lila_2{background-color: #6b63ffb1;}
+#box_lila_3{background-color: #6b63ff77;}
+
+#box_orange{background-color: #f9a826;}
+#box_orange_2{background-color: #f9a826b1;}
+#box_orange_3{background-color: #f9a82677;}
+
+#box_rosa{background-color: #f50057;}
+#box_rosa_2{background-color: #f50057b1;}
+#box_rosa_3{background-color: #f5005777;}
+
+#btn-primary{background-color: #00bfa6;}
